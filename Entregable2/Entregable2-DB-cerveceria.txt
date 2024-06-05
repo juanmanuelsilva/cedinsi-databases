@@ -1,0 +1,76 @@
+CREATE DATABASE cerveceria;
+ 
+USE cerveceria;
+ 
+ 
+    CREATE TABLE Materias_primas (
+        Id_materia_prima INT AUTO_INCREMENT,
+        nombre_materia_prima VARCHAR(255),
+        unidad_medida VARCHAR(255),
+        precio_unidad DECIMAL,
+        cantidad INT,
+        PRIMARY KEY(Id_materia_prima)
+    );
+ 
+    CREATE TABLE Tipos_cerveza (
+        Id_Tipo_cerveza INT AUTO_INCREMENT,
+        nombre_tipo_cerveza VARCHAR(255),
+        PRIMARY KEY(Id_tipo_cerveza)
+    );
+ 
+    CREATE TABLE Categorias_cerveza (
+        Id_Categoria_cerveza INT AUTO_INCREMENT,
+        nombre_categoria_cerveza VARCHAR(255),
+        PRIMARY KEY(Id_categoria_cerveza)
+    );
+ 
+    CREATE TABLE Cervezas (
+        Id_cerveza INT AUTO_INCREMENT,
+        nombre_cerveza VARCHAR(255),
+        embalaje VARCHAR(255),
+        precio_unidad DECIMAL,
+        id_categoria INT,
+        PRIMARY KEY(Id_cerveza),
+        FOREIGN KEY(id_categoria) REFERENCES Categorias_cerveza(Id_categoria)
+    );
+ 
+    CREATE TABLE Cervezas_materias_primas (
+        id_cerveza INT,
+        id_materia_prima INT,
+        PRIMARY KEY(id_cerveza, id_materia_prima),
+        FOREIGN KEY(id_cerveza) REFERENCES Cervezas(Id_cerveza),
+        FOREIGN KEY(id_materia_prima) REFERENCES Materias_primas(Id_materia_prima)
+    );
+ 
+    CREATE TABLE Categorias_tipos (
+        id_categoria INT,
+        id_tipo_cerveza INT,
+        PRIMARY KEY(id_categoria, id_tipo_cerveza),
+        FOREIGN KEY(id_categoria) REFERENCES Categorias_cerveza(Id_categoria),
+        FOREIGN KEY(id_tipo_cerveza) REFERENCES Tipos_cerveza(Id_tipo_cerveza)
+    );
+ 
+ 
+ 
+    INSERT INTO Materias_primas (nombre_materia_prima, unidad_medida, precio_unidad, cantidad) VALUES
+    ('Lupulo', 'Kg', 5000, 5),
+    ('Botella', 'Un', 500, 5000),
+    ('Tapa', 'un', 50, 5000);
+ 
+    INSERT INTO Tipos_cerveza (nombre_tipo) VALUES
+    ('Dark'),
+    ('Pale'),
+    ('Bocks'),
+    ('Stouts'),
+    ('Porters'),
+    ('Belgians'),
+    ('Sours');
+ 
+    INSERT INTO Categorias_cerveza (nombre_categoria) VALUES
+    ('Lagers'),
+    ('Ales');
+ 
+    INSERT INTO Cervezas (nombre_cerveza, embalaje, precio_unidad) VALUES
+    ('Poker', 'x30', 75000),
+    ('Aguila', 'x30', 90000),
+    ('Club Colombia', 'sixpack', 27000);
