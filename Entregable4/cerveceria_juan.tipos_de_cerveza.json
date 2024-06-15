@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "666d0d992cd90ec0fd8e5604"
+  },
+  "nombre": "Ale",
+  "descripcion": "Cerveza de alta fermentación con sabor intenso y aroma frutal.",
+  "unidades_producidas": 0,
+  "precio_venta": 12.5
+},
+{
+  "_id": {
+    "$oid": "666d0d992cd90ec0fd8e5605"
+  },
+  "nombre": "Lager",
+  "descripcion": "Cerveza de baja fermentación con sabor ligero y refrescante.",
+  "unidades_producidas": 0,
+  "precio_venta": 13.4
+},
+{
+  "_id": {
+    "$oid": "666d0d992cd90ec0fd8e5606"
+  },
+  "nombre": "Negra",
+  "descripcion": "Cerveza oscura con sabor fuerte y aroma tostado.",
+  "unidades_producidas": 0,
+  "precio_venta": 15
+}]

@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "666d0e502cd90ec0fd8e560e"
+  },
+  "tipo_cerveza": "Ale",
+  "lotes_producidos": 0
+},
+{
+  "_id": {
+    "$oid": "666d0e502cd90ec0fd8e560f"
+  },
+  "tipo_cerveza": "Lager",
+  "lotes_producidos": 0
+},
+{
+  "_id": {
+    "$oid": "666d0e502cd90ec0fd8e5610"
+  },
+  "tipo_cerveza": "Negra",
+  "lotes_producidos": 0
+}]

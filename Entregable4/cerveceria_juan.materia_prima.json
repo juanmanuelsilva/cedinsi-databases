@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "666d0e0a2cd90ec0fd8e5609"
+  },
+  "ingrediente": "Agua",
+  "unidades_inventario": 1000,
+  "unidades_consumidas": 0
+},
+{
+  "_id": {
+    "$oid": "666d0e0a2cd90ec0fd8e560a"
+  },
+  "ingrediente": "Lúpulo",
+  "unidades_inventario": 1000,
+  "unidades_consumidas": 0
+},
+{
+  "_id": {
+    "$oid": "666d0e0a2cd90ec0fd8e560b"
+  },
+  "ingrediente": "Cebada",
+  "unidades_inventario": 1000,
+  "unidades_consumidas": 0
+},
+{
+  "_id": {
+    "$oid": "666d0e0a2cd90ec0fd8e560c"
+  },
+  "ingrediente": "Col",
+  "unidades_inventario": 1000,
+  "unidades_consumidas": 0
+}]

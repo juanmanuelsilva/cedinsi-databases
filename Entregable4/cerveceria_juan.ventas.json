@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "666d0edd2cd90ec0fd8e5612"
+  },
+  "fecha_venta": "2024-06-14",
+  "cervezas_vendidas": [
+    {
+      "tipo_cerveza": "Ale",
+      "unidades": 50
+    },
+    {
+      "tipo_cerveza": "Lager",
+      "unidades": 50
+    },
+    {
+      "tipo_cerveza": "Negra",
+      "unidades": 50
+    }
+  ],
+  "total_venta": 0
+}]
